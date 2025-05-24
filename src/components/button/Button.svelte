@@ -1,6 +1,6 @@
 <script lang="ts">
 
-	let { onClick, label } = $props();
+	let { onClick, text } = $props();
 
 </script>
 
@@ -8,7 +8,7 @@ bbb<button
 	class="button"
 	on:click={onClick}
 >
-	{#if label}
-		<span class="label">{label}</span>
+	{#if text}
+		<span class="label">{text}</span>
 	{/if}
 </button>button
